@@ -18,4 +18,20 @@ ul{
 body{
     margin: 0;
     font-family: sans-serif;
+    background-color: rgb(57, 57, 57);
+}
+.box{
+    margin-left: auto;
+    margin-right: auto;
+     width: 100px;
+    height: 100px;
+    box-shadow: 150px 300px yellow, -150px 150px black ;
+    background-color: red;
+}
+.box::after{
+    margin-left: 100%;
+    margin-right: 100%;
+     width: 100px;
+    height: 100px;
+    background-color: red;
 }
