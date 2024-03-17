@@ -20,7 +20,13 @@ body{
     font-family: sans-serif;
     background-color: rgb(57, 57, 57);
 }
+.tittle{
+    color: white;
+    font-size: 50px;
+    margin-left: 670px;
+}
 .box{
+    position: relative;
     margin-left: auto;
     margin-right: auto;
      width: 100px;
@@ -28,10 +34,23 @@ body{
     box-shadow: 150px 300px yellow, -150px 150px black ;
     background-color: red;
 }
-.box::after{
-    margin-left: 100%;
-    margin-right: 100%;
-     width: 100px;
+.box::after {
+    content: "";
+    position: absolute;
+    margin-left: -150px;
+    width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: rgb(64, 0, 255);
+    border-radius: 100%;
+    box-shadow: 150px 300px orange,300px 150px rgb(255, 255, 255);
+}
+.box::before{
+    content: "";
+    position: absolute;
+    margin-left: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 21);
+    border-radius: 25%;
+    box-shadow: -300px 300px rgb(46, 206, 221),-150px 150px rgb(181, 0, 197);
 }
